@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova Explore - Inicio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Innova Explore">
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="btn btn-primary">Iniciar sesión</a>
+                <a href="register.html" class="btn btn-secondary">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="welcome-container">
+            <h1>Bienvenido a Innova Explore</h1>
+            <p>Explora y disfruta de tu música favorita</p>
+            <input type="file" id="music-input" accept="audio/*" hidden>
+            <button class="btn btn-upload" onclick="document.getElementById('music-input').click();">
+                <i class="fas fa-upload"></i> Importar Música
+            </button>
+        </div>
+        <div class="player-container">
+            <audio id="audio-player" controls>
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
